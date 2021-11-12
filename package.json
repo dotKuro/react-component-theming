@@ -1,0 +1,31 @@
+{
+  "name": "react-component-theming",
+  "version": "0.1.0",
+  "description": "theming solution for react that aims to keep components independent.",
+  "main": "build/lib.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "qa": "npm run qa:lint && npm run qa:test",
+    "qa:lint": "eslint src/**",
+    "qa:test": "mocha --require ts-node/register --ui tdd \"src/**/*.test.*\""
+  },
+  "author": {
+    "name": "Alexander Kampf",
+    "email": "mail@akampf.dev"
+  },
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/mocha": "9.0.0",
+    "assertthat": "6.3.14",
+    "eslint": "7.32.0",
+    "eslint-config-es": "3.31.0",
+    "mocha": "9.1.3",
+    "ts-node": "10.4.0",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "@types/react": "17.0.34",
+    "react": "17.0.2"
+  }
+}
