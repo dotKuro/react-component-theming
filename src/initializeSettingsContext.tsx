@@ -54,24 +54,25 @@ const initializeSettingsContext = function<TSettings, TThemingVariant extends st
     );
   };
 
-  const useSettings: UseSettings<TSettings> = function (): TSettings {
+  const useSettings: UseSettings<TSettings> = function (): ReturnType<UseSettings<TSettings>> {
     const { settings } = useContext(settingsContext);
 
-    return settings;
+    return { settings };
   };
 
-  const useThemingVariant: UseThemingVariant<TThemingVariant> = function (): TThemingVariant {
-    const { themingVariant } = useContext(settingsContext);
+  const useThemingVariant: UseThemingVariant<TThemingVariant> =
+    function (): ReturnType<UseThemingVariant<TThemingVariant>> {
+      const { themingVariant, setThemingVariant } = useContext(settingsContext);
 
-    return themingVariant;
-  };
+      return { themingVariant, setThemingVariant };
+    };
 
   const useComponentTheme: UseComponentTheme<TSettings, TThemingVariant> =
     function<TComponentTheme>(
       componentThemeFactory: ComponentThemeFactory<TSettings, TThemingVariant, TComponentTheme>
     ): TComponentTheme {
-      const settings = useSettings();
-      const themingVariant = useThemingVariant();
+      const { settings } = useSettings();
+      const { themingVariant } = useThemingVariant();
 
       return componentThemeFactory({ settings, themingVariant });
     };

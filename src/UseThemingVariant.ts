@@ -1,3 +1,6 @@
-type UseThemingVariant<TThemingVariant extends string> = () => TThemingVariant;
+type UseThemingVariant<TThemingVariant extends string> = () => {
+  themingVariant: TThemingVariant;
+  setThemingVariant: (newThemingVariant: TThemingVariant) => void;
+};
 
 export type { UseThemingVariant };
