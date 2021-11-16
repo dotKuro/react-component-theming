@@ -14,7 +14,7 @@
     "name": "Alexander Kampf",
     "email": "mail@akampf.dev"
   },
-  "license": "AGPL-3.0-or-later",
+  "license": "LGPL-2.1",
   "devDependencies": {
     "@testing-library/react": "12.1.2",
     "@types/mocha": "9.0.0",
