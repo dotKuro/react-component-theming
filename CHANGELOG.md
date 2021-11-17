@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/dotKuro/react-component-theming/compare/1.0.0...1.1.0) (2021-11-17)
+
+
+### Bug Fixes
+
+* Add example to tsconfig exclude ([30c93ab](https://github.com/dotKuro/react-component-theming/commit/30c93ab5e076caa0a68b142f5ac52dfea527cdb0))
+* Add unadded changes ([#6](https://github.com/dotKuro/react-component-theming/issues/6)) ([ce4429e](https://github.com/dotKuro/react-component-theming/commit/ce4429e6588fb33be7910e105cfe8136f6d4c347))
+
+
+### Features
+
+* Add documentation and example. ([#5](https://github.com/dotKuro/react-component-theming/issues/5)) ([36cdd06](https://github.com/dotKuro/react-component-theming/commit/36cdd068c0333e6cf37b0c945cc2a9b9de8cbe25))
+
 # 1.0.0 (2021-11-17)
 
 
