@@ -44,6 +44,85 @@ corresponding [settings](#settings).
 A component theme is a theme for a specific component.
 Each component does define this theme for itself. Here you
 can be as specific as you want. This theme is based on the
-settings and the current theming variant making this approach
-really flexible since all edge cases can be handled in the
-component. Therefore, components continue to work in isolation.
+[settings](#settings) and the current
+[theming variant](#theming-variant) making this approach really
+flexible since all edge cases can be handled in the component.
+Therefore, components continue to work in isolation.
+
+## Getting Started
+
+This guide is based on the [example](https://github.com/dotKuro/react-component-theming/tree/main/example)
+provided by this repository.
+
+### Create your Settings Type
+
+```typescript
+// src/Settings.ts
+
+interface Settings {
+  // Use here what you need
+  textColor: string;
+  backgroundColor: string;
+  // ...
+}
+```
+
+### Create your Theming Variant Type
+
+```typescript
+// src/ThemingVariant.ts
+
+// Should be a union type of strings, like this one
+type themingVariant = 'light' | 'dark';
+```
+
+### Create your Settings Collection
+```typescript
+// src/SettingsCollection.ts
+
+const settingsCollection: SettingsCollection<Settings, ThemingVariant> = {
+  light: {
+    textColor: 'black',
+    backgroundColor: 'white'
+  },
+  dark: {
+    textColor: 'white',
+    backgroundColor: 'black'
+  }
+};
+```
+### Initialize the Context
+
+```typescript
+// src/settingsContext.ts
+
+const {
+  SettingsProvider,
+  useComponentTheme,
+  useThemingVariant
+} = initializeSettingsContext<Settings, ThemingVariant>({
+  settingsCollection,
+  initialThemingVariant: 'light'
+});
+```
+
+### Put the Provider into your Application
+
+```typescript jsx
+// src/pages/_app.tsx
+
+const App: FunctionComponent<AppProps> = function ({ 
+  Component,
+  pageProps 
+}): ReactElement {
+  return (
+    <SettingsProvider>
+      <Component { ...pageProps } />;
+    </SettingsProvider>
+  );
+};
+```
+
+### Start using it :)
+
+Have a look [here](https://github.com/dotKuro/react-component-theming/tree/main/example/src/pages/index.tsx).
