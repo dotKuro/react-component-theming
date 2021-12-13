@@ -4504,14 +4504,6 @@ rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-component-theming@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-component-theming/-/react-component-theming-1.0.0.tgz#5c167e69c1c85b959f3138f727d244f1147f5eb8"
-  integrity sha512-dM25G40JSEbMvbFZEbxKjPzxlwvW96fAC6IFxLRBjyjZzDqiTRAQofHt/MSG3HGhIWernFznO5XCHu1ZfrlMiA==
-  dependencies:
-    "@types/react" "17.0.34"
-    react "17.0.2"
-
 react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -5439,10 +5431,10 @@ typedescriptor@4.0.12:
   dependencies:
     defekt "7.3.2"
 
-typescript@4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.4.tgz#2cd01a1a1f160704d3101fd5a58ff0f9fcb8030c"
-  integrity sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA==
+typescript@4.5.3:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.3.tgz#afaa858e68c7103317d89eb90c5d8906268d353c"
+  integrity sha512-eVYaEHALSt+s9LbvgEv4Ef+Tdq7hBiIZgii12xXJnukryt3pMgJf6aKhoCZ3FWQsu6sydEnkg11fYXLzhLBjeQ==
 
 uglify-js@^3.1.4:
   version "3.14.3"
