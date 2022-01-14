@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/dotKuro/react-component-theming/compare/1.1.0...1.1.1) (2022-01-14)
+
+
+### Bug Fixes
+
+* bump @types/react from 17.0.34 to 17.0.38 ([#29](https://github.com/dotKuro/react-component-theming/issues/29)) ([9c65bc8](https://github.com/dotKuro/react-component-theming/commit/9c65bc820b055e4d74b77de799b6b6a622c91a22))
+
 # [1.1.0](https://github.com/dotKuro/react-component-theming/compare/1.0.0...1.1.0) (2021-11-17)
 
 

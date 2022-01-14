@@ -1,6 +1,6 @@
 {
   "name": "react-component-theming",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "theming solution for react that aims to keep components independent.",
   "main": "build/lib.js",
   "scripts": {
