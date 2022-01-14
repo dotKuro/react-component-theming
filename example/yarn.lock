@@ -1426,10 +1426,10 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-component-theming@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-component-theming/-/react-component-theming-1.0.0.tgz#5c167e69c1c85b959f3138f727d244f1147f5eb8"
-  integrity sha512-dM25G40JSEbMvbFZEbxKjPzxlwvW96fAC6IFxLRBjyjZzDqiTRAQofHt/MSG3HGhIWernFznO5XCHu1ZfrlMiA==
+react-component-theming@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-component-theming/-/react-component-theming-1.1.0.tgz#97c36c1e3b3a3d2dde772e80aeb1287e3f9834e0"
+  integrity sha512-bDGxbOioYRgMJeq5mHsb2pAw3p8PyPFZB6cA9Nk3On6bF/iDxdFo6TqArVVYzXMj/g+40SbfhWCJH67LOvA1/g==
   dependencies:
     "@types/react" "17.0.34"
     react "17.0.2"
