@@ -1,21 +1,17 @@
-import { ComponentThemeFactory } from 'react-component-theming';
+import { ComponentThemeFactoryArgs, InferComponentThemeOf } from 'react-component-theming';
 import { Settings } from '../Settings';
-import { ThemingVariant } from '../ThemingVariant';
 import React, { FunctionComponent, ReactElement } from 'react';
 import { useComponentTheme, useThemingVariant } from '../settingsContext';
 
-interface IndexTheme {
-  textColor: string;
-  backgroundColor: string;
-}
-
-const useIndexTheme: ComponentThemeFactory<Settings, ThemingVariant, IndexTheme> =
-  function ({ settings }): IndexTheme {
+const useIndexTheme =
+  function ({ settings }: ComponentThemeFactoryArgs<Settings>) {
     return {
       textColor: settings.textColor,
       backgroundColor: settings.backgroundColor
     };
   };
+
+type IndexTheme = InferComponentThemeOf<typeof useIndexTheme>;
 
 const Index: FunctionComponent = function (): ReactElement {
   const { componentTheme } = useComponentTheme(useIndexTheme);

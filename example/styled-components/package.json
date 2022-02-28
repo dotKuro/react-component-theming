@@ -1,0 +1,26 @@
+{
+  "name": "react-component-theming-example",
+  "version": "0.1.0",
+  "description": "example on how the use react-component-theming",
+  "scripts": {
+    "start": "next dev"
+  },
+  "author": {
+    "name": "Alexander Kampf",
+    "email": "mail@akampf.dev"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.11",
+    "@types/styled-components": "5.1.23",
+    "roboter": "12.7.0"
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-component-theming": "1.1.1",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.3"
+  }
+}
