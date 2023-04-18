@@ -1,3 +1,6 @@
+⚠️⚠️⚠️ UNMAINTAINED ⚠️⚠️⚠️
+
+
 # react-component-theming
 
 Usually consistent theming across multiple components is achieved
